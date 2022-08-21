@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamup Tile</title>
+    <link rel="stylesheet" href="styleit.css">
+</head>
+
+<body>
+
+    <div class="head">
+        <nav>
+            <img src="Images/menu.png" alt="Menu Image" class="men">
+            <ul>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">Morden</a></li>
+                <li><a href="#">Content</a></li>
+                <li><a href="#">Affordable</a></li>
+            </ul>
+            <button type="button" onclick="lightup()" id="bus"><span></span></button>
+        </nav>
+
+        <div class="contain-lamp">
+            <img src="Images/lamp.png" alt="lamp image" class="lamp">
+            <img src="Images/light.png" alt="light image" class="light" id="light">
+        </div>
+
+        <div class="text">
+            <h1>Let us start <br> the lighting</h1>
+            <p>This lamp can light up your life just as this webiste lamp will do for us. Use it where ever you want to
+                cause whenever there is a need there is company. Header Website</p>
+
+                <div class="conpanel">
+                    <p>Adesh</p>
+                    <div class="liner"><span></span></div>
+                    <p>Tanmay</p>
+                </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        var bnt = document.getElementById("bus");
+        var light = document.getElementById("light")
+
+
+        function lightup(){
+            bnt.classList.toggle("uplight");
+            light.classList.toggle("turnon")
+        }
+    </script>
+
+</body>
+
+</html>
